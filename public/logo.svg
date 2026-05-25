@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7B4FE9" />
+      <stop offset="100%" stop-color="#3B6BF7" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background Shield/Hexagon with glow -->
+  <path d="M50 5 L88 27 L88 73 L50 95 L12 73 L12 27 Z" fill="none" stroke="url(#logo-grad)" stroke-width="4" filter="url(#glow)" opacity="0.6"/>
+  <path d="M50 5 L88 27 L88 73 L50 95 L12 73 L12 27 Z" fill="none" stroke="url(#logo-grad)" stroke-width="2"/>
+  
+  <!-- Stylized "E" / Speed lines representing ELX -->
+  <path d="M30 35 L70 35" stroke="url(#logo-grad)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M30 50 L60 50" stroke="url(#logo-grad)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M30 65 L70 65" stroke="url(#logo-grad)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M30 35 L30 65" stroke="url(#logo-grad)" stroke-width="6" stroke-linecap="round"/>
+</svg>
